@@ -1,0 +1,91 @@
+form {
+  margin: 1em 25%;
+  border: 1px solid #001500;
+  background-color: #fff;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 5px 5px 10px #fff;
+  margin-left: 30%;
+  width: 800px;
+}
+
+form h1 {
+  padding-left: 10px;
+}
+
+form label {
+  display: inline-block;
+  width: 40%;
+}
+
+form ul {
+  list-style-type: none;
+}
+
+form li {
+  margin-bottom: 10px;
+}
+
+form p {
+  padding-left: 1em;
+  font-weight: lighter;
+}
+
+.qte {
+  width: 50px;
+}
+
+select {
+  width: 120px;
+  border-radius: 16px;
+  margin-left: 300px;
+}
+
+input {
+  background: #fff;
+  border-radius: 8px;
+  padding: 5px;
+  transition: 1s;
+}
+
+.droite {
+  width: 15%;
+}
+
+.droiteY {
+  width: 50px;
+}
+
+.but {
+  margin-left: 10%;
+}
+
+.button {
+  text-align: center;
+  background-color: #bbbebb;
+  border-radius: 18px;
+  color: #001500;
+  padding: 5px 12px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input.missing {
+  border-color: red;
+}
+
+input[type='checkbox'].missing {
+  outline: 1px solid red;
+  width: 12px;
+  height: 12px;
+  margin-left: 56px;
+}
+
+@media print{
+  @page{
+      size:landscape;
+  }
+}

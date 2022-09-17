@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Exercice 8 : liste déroulante à choix multiples</title>
+</head>
+
+<body>
+
+
+    <fieldset>
+        <legend>Quel(s) appareil(s) utilisez-vous pour naviguer sur le web?</legend>    
+        <label>Vous pouvez faire plusieurs choix en maintenant la touche ctrl enfoncée</label><br>    
+        <select id="choix" name="choix" size="5" multiple>			
+				<option value="unOrdinateur">Un ordinateur fixe ou portable</option>
+				<option value="uneTablette">Une tablette</option>
+				<option value="unSmartphone">Un smartphone</option>
+				<option value="uneTV">Une TV</option>
+				<option value="Autre">Autre</option>		
+			</select>     
+        <input id="valider" type="button" value="Valider"/>
+    </fieldset>
+
+    <script src="script.js"></script>
+    <p id="resultat"></p>
+</body>
+
+</html>

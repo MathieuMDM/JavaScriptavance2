@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Exercice 17 : exercice final</title>
+</head>
+
+<body>
+    <form id="myForm" method="post" enctype="text/plain">
+        <h1> Formulaire de réservation :</h1>
+        <p>(* = champ obligatoire</p>
+        <ul>
+            <li><label for="nom">Nom* :</label><input class="droite checkAfterChange" type="text" id="nom" name="nom" required autofocus
+                    placeholder="Votre nom" /></li>
+            <li><label for="prenom">Prénom :</label><input class="droite" type="text" id="prenom" name="prenom"
+                    placeholder="Votre prénom" /></li>
+            <li><label for="tel">Téléphone :</label><input class="droite" type="tel" id="tel" name="tel"
+                    placeholder="0123456789" /></li>
+            <li><label for="mail">Email* :</label><input class="droite checkAfterChange" type="email" id="mail" name="mail" required
+                    placeholder="xxx@yyy.zz" /></li>
+            <li><label for="reservation">Votre réservation est pour :</label><br>
+                <div>
+                <select id="selectU" class="timeOfDay">
+                    <option value="demiJournee">Demi-journée</option>
+                    <option value="journee">Journée</option>
+                    <option value="repas">Repas</option>
+                </select>
+                <input class="qte" required placeholder="Qté" type="number" id="qte1" min="0">
+                <input placeholder="Sous-total HT" type="number" class="stHt" id="qteU" readonly><br>
+            </div>
+            <div>
+                <select id="selectD" class="timeOfDay">
+                    <option value="demiJournee">Demi-journée</option>
+                    <option value="journee">Journée</option>
+                    <option value="repas">Repas</option>
+                </select>
+                <input class="qte" required placeholder="Qté" type="number" id="qte2" min="0">
+                <input placeholder="Sous-total HT" type="number" class="stHt" id="qteD" readonly><br>
+            </div>
+            <div>
+                <select id="selectT" class="timeOfDay">
+                    <option value="demiJournee">Demi-journée</option>
+                    <option value="journee">Journée</option>
+                    <option value="repas">Repas</option>
+                </select>
+                <input class="qte" id="qte3" required placeholder="Qté" type="number" min="0">
+                <input placeholder="Sous-total HT" type="number" class="stHt" id="qteT" readonly>
+            </div>
+            </li>
+            <li><label for="ht">Sous-Total HT</label>
+                <input class="droite" type="number" id="ht" name="ht" required
+                    placeholder="Sous-Total HT" readonly /><label>euros</label></li>
+            <li><label for="ttc">Total TTC (TVA 20%):</label>
+                <input class="droite" type="number" id="ttc" name="ttc"
+                    required placeholder="Total TTC" readonly /><label>euros</label></li>
+            <li><label for="acce">J'accepte les conditions générales*</label>
+                <input class="droite checkAfterChange" type="checkbox"
+                    id="acce" name="acce" /></li>
+                
+        </ul>
+        <div class="but">
+            <input type="button" class="button" id="verifier" value="Vérifier avant envoi"/>
+            <input type="button" class="button" id="imprimer" value="Imprimer"/>
+            <input type="button" class="button" id="reini" value="Reinitialiser"/>
+            <input type="button" class="button" id="emc" value="Envoyer ma commande"/>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
